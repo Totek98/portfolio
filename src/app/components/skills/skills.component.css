@@ -1,0 +1,107 @@
+main
+{
+  color: black;
+  padding: 30px 0;
+  padding-bottom: 90px;
+}
+.skill__container
+{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.dark
+{
+  color: white !important;
+}
+.title_skill
+{
+  text-align: center;
+}
+.skill_content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.name__skill
+{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.stars
+{
+  display: flex;
+}
+.skill
+{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+.star-five {
+	margin: 25px 0;
+	position: relative;
+	display: block;
+	color: #b30;
+	width: 0px;
+	height: 0px;
+	border-right: 25px solid transparent;
+	border-bottom: 17px  solid #b30;
+	border-left: 25px solid transparent;
+	-moz-transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+}
+.star-five:before {
+	border-bottom: 20px solid #b30;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: -11px;
+	left: -14px;
+	display: block;
+	content: '';
+	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);
+	-o-transform: rotate(-35deg);
+}
+.star-five:after {
+	position: absolute;
+	display: block;
+	color:#b30;
+	top: 0;
+	left: -25px;
+	width: 0px;
+	height: 0px;
+	border-right: 25px solid transparent;
+	border-bottom: 17px solid #b30;
+	border-left: 25px solid transparent;
+	-webkit-transform: rotate(-70deg);
+	-moz-transform: rotate(-70deg);
+	-ms-transform: rotate(-70deg);
+	-o-transform: rotate(-70deg);
+	content: '';
+}
+.star-five.color, .star-five.color:after
+{
+  border-right: 25px solid transparent;
+	border-bottom: 17px  solid white !important;
+	border-left: 25px solid transparent;
+}
+.star-five.color:before
+{
+  border-bottom: 20px solid white !important;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+@media only screen and (max-width:500px) {
+  .skill { font-size: 30px; grid-template-columns: 1fr; }
+}

@@ -1,0 +1,56 @@
+main
+{
+  color: black;
+}
+.dark
+{
+  color: white !important;
+}
+.contact__container
+{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+  padding-bottom: 90px;
+}
+.con__title
+{
+  text-align: center;
+}
+.con__content
+{
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.con
+{
+  max-height: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.con span
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.fa
+{
+  transition: all .3s;
+  cursor: pointer;
+}
+.fa:hover
+{
+  color: #F26C1A;
+}

@@ -1,0 +1,53 @@
+.mobile_navigation
+{
+  display: none;
+  height: 90px;
+}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+{
+  background-color: white;
+}
+.hamburger
+{
+  outline: none;
+  margin-right: 1em;
+}
+.mobilemenu
+{
+  position: absolute;
+  bottom: -400px;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  background-color: rgba(23, 42, 64, 0.7);
+  display: none;
+  transition: all .3s;
+}
+.mobilemenu.open
+{
+  display: block;
+  height: 400px;
+}
+.mobilemenu ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mobilemenu ul li
+{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+.mobilemenu ul li:hover
+{
+  background-color: rgba(23, 42, 64, 0.9);
+}
+@media only screen and (max-width: 935px) {
+  .mobile_navigation { display: flex; justify-content: flex-end; align-items: center; }
+  .mobilemenu { display: none; }
+}

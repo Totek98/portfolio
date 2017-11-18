@@ -1,0 +1,56 @@
+.up
+{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #295949;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 9999;
+  color: #0b7;
+}
+.up:hover
+{
+  color: #2C3E50;
+  border: 2px solid #FC4349;
+}
+.night
+{
+  position: fixed;
+  bottom: 64px;
+  right: 25px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #295949;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 9999;
+  color: #0b7;
+}
+.night:hover
+{
+  color: #2C3E50;
+  border: 2px solid #FC4349;
+}
+.night i
+{
+  transform: rotate(30deg);
+}
+.color
+{
+  background-color: #D7DADB;
+  transition: all .3s;
+}
+.nights
+{
+  background-color: #22424B !important;
+  color: white !important;
+}

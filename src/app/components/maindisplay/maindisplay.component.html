@@ -1,0 +1,11 @@
+<div class="color" [class.nights]="isNight" >
+  <div class="up"><i class="material-icons">expand_less</i></div>
+  <div class="night" (click)="nightmode()"><i class="material-icons">brightness_2</i></div>
+  <app-navigation id="home"></app-navigation>
+  <app-main-header></app-main-header>
+  <app-portfolio [isDarkTheme]="isNight"></app-portfolio>
+  <app-project-content [isDarkTheme]="isNight"></app-project-content>
+  <app-skills [isDarkTheme]="isNight"></app-skills>
+  <app-contact [isDarkTheme]="isNight"></app-contact>
+  <app-footer></app-footer>
+</div>
