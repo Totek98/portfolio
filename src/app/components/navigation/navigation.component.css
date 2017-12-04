@@ -26,6 +26,16 @@
   transition: all .3s;
   padding-left: 1em;
 }
+@supports not(display:grid) {
+  .container
+  {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
 .container
 {
   max-width: 1200px;
