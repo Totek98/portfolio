@@ -15,10 +15,10 @@ export class MaindisplayComponent implements OnInit {
   constructor() { }
 
   checkdate(){
-    if(this.data.getHours() >= 21 && this.data.getHours() >= 6){
-      this.isNight = true;
-    } else {
+    if(this.data.getHours() < 21 && this.data.getHours() > 6){
       this.isNight = false;
+    } else {
+      this.isNight = true;
     }
   }
 

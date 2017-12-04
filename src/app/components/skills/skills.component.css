@@ -50,7 +50,7 @@ main
 	width: 0px;
 	height: 0px;
 	border-right: 25px solid transparent;
-	border-bottom: 17px  solid #b30;
+	border-bottom: 17px  solid #FBBA42;
 	border-left: 25px solid transparent;
 	-moz-transform: rotate(35deg);
 	-webkit-transform: rotate(35deg);
@@ -58,7 +58,7 @@ main
 	-o-transform: rotate(35deg);
 }
 .star-five:before {
-	border-bottom: 20px solid #b30;
+	border-bottom: 20px solid #FBBA42;
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
 	position: absolute;
@@ -82,7 +82,7 @@ main
 	width: 0px;
 	height: 0px;
 	border-right: 25px solid transparent;
-	border-bottom: 17px solid #b30;
+	border-bottom: 17px solid #FBBA42;
 	border-left: 25px solid transparent;
 	-webkit-transform: rotate(-70deg);
 	-moz-transform: rotate(-70deg);

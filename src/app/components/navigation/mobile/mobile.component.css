@@ -15,24 +15,28 @@
 .mobilemenu
 {
   position: absolute;
-  bottom: -400px;
+  bottom: 0px;
   right: 0;
   width: 100%;
-  height: 0px;
-  background-color: rgba(23, 42, 64, 0.7);
-  display: none;
-  transition: all .3s;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s linear;
 }
 .mobilemenu.open
 {
-  display: block;
-  height: 400px;
+  visibility: visible;
+  opacity: 1;
 }
 .mobilemenu ul
 {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(23, 42, 64, 0.7);
 }
 .mobilemenu ul li
 {
@@ -49,5 +53,4 @@
 }
 @media only screen and (max-width: 935px) {
   .mobile_navigation { display: flex; justify-content: flex-end; align-items: center; }
-  .mobilemenu { display: none; }
 }

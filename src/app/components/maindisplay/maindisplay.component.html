@@ -1,5 +1,5 @@
 <div class="color" [class.nights]="isNight" >
-  <div class="up"><i class="material-icons">expand_less</i></div>
+  <div class="up"><i [scrollTo]="'#home'" [scrollDuration]="1000" [scrollOffset]="-10" class="material-icons">expand_less</i></div>
   <div class="night" (click)="nightmode()"><i class="material-icons">brightness_2</i></div>
   <app-navigation id="home"></app-navigation>
   <app-main-header></app-main-header>

@@ -8,9 +8,9 @@
 </div>
 <div class="mobilemenu" [class.open]="mobileactive" id="mobilemenu">
   <ul>
-    <li [scrollTo]="'#home'" [scrollDuration]="1000" [scrollOffset]="-10"><a tabindex="1">Home</a></li>
-    <li [scrollTo]="'#portfolio'" [scrollDuration]="1000" [scrollOffset]="-100"><a tabindex="2">Portfolio</a></li>
-    <li [scrollTo]="'#projects'" [scrollDuration]="1000" [scrollOffset]="-100"><a tabindex="3">Projects</a></li>
-    <li [scrollTo]="'#contact'" [scrollDuration]="1000" [scrollOffset]="-100"><a tabindex="4">Contact</a></li>
+    <li [scrollTo]="'#home'" [scrollDuration]="1000" (click)="hamb()" [scrollOffset]="-10"><a tabindex="1">Home</a></li>
+    <li [scrollTo]="'#portfolio'" [scrollDuration]="1000" (click)="hamb()" [scrollOffset]="-100"><a tabindex="2">Portfolio</a></li>
+    <li [scrollTo]="'#projects'" [scrollDuration]="1000" (click)="hamb()" [scrollOffset]="-100"><a tabindex="3">Projects</a></li>
+    <li [scrollTo]="'#contact'" [scrollDuration]="1000" (click)="hamb()" [scrollOffset]="-100"><a tabindex="4">Contact</a></li>
   </ul>
 </div>
